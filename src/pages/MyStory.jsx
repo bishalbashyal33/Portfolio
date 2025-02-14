@@ -1,5 +1,5 @@
 import React from 'react';
-import mountainsImage from '../assets/mountains.jpg';
+
 
 const MyStory = () => {
     return (
@@ -17,7 +17,7 @@ const MyStory = () => {
             {/* Full Width Image Section - No Bottom Padding */}
             <div className="w-screen relative left-1/2 right-1/2 -mx-[50.51vw] h-[400px] align-bottom">
                 <img
-                    src={mountainsImage}
+                    src='public\assets\personart.png'
                     alt="Person in orange jacket by mountain lake"
                     className="w-full h-full object-cover align-bottom"
                 />
