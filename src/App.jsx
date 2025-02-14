@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout'; // Adjust path if necessary
-import HomePage from './pages/Homepage';
-import BlogsPage from './pages/BlogsPage';
-import BlogPost from './pages/BlogPost';
-import { Link } from 'react-scroll';
+import Layout from '/src/components/Layout'; // Adjust path if necessary
+import HomePage from '/src/pages/Homepage';
+import BlogsPage from '/src/pages/BlogsPage';
+import BlogPost from '/src/pages/BlogPost';
+
 
 const App = () => {
   return (
