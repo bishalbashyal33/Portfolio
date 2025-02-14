@@ -37,7 +37,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: visible ? 0 : -50, opacity: visible ? 1 : 0 }}
       transition={{ type: 'spring', stiffness: 120, damping: 12 }}
-      className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm border-b border-gray-200"
+      className="fixed top-10 left-0 right-0 bg-white z-50 shadow-sm border-b border-gray-200"
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">

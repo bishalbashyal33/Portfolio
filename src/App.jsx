@@ -11,6 +11,7 @@ import SDGs from './pages/SDGs';
 import MyStory from './pages/MyStory';
 import Contact from './pages/Contact';
 import Awards from './pages/Awards';
+import UnderConstructionBanner from './components/UnderConstructionBanner';
 
 // Create a wrapper component for sections
 const Section = ({ name, children, alternate = false }) => {
@@ -33,6 +34,7 @@ const App = () => {
     <div className="min-h-screen text-white">
     {/* Wrap Navbar inside a container */}
     <div className="w-[70%] mx-auto">
+      <UnderConstructionBanner/>
       <Navbar />
     </div>
 
@@ -79,8 +81,8 @@ const App = () => {
         </Section>
       </main>
 
-      <footer className="w-full bg-[#011627] py-8 text-center">
-        <p className="text-[#00A3FF] text-sm">Copyright All Rights Reserved</p>
+      <footer className="w-full bg-[white] py-4 text-center">
+        <p className="text-[black] text-sm">Copyright All Rights Reserved</p>
       </footer>
     </div>
   );

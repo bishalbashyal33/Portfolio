@@ -1,29 +1,30 @@
-import React from 'react';
-
+import React from "react";
 
 const MyStory = () => {
-    return (
-        <div>
-            {/* Text Content Section */}
-            <div className="w-full max-w-6xl mx-auto py-16 px-8">
-                <h2 className="text-4xl font-bold text-[#00A3FF] mb-8">My Story</h2>
-                <div className="text-white/80 max-w-3xl">
-                    <p className="leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    </p>
-                </div>
-            </div>
+  return (
+    <div className=" text-[#37352f] min-h-screen">
 
-            {/* Full Width Image Section - No Bottom Padding */}
-            <div className="w-screen relative left-1/2 right-1/2 -mx-[50.51vw] h-[400px] align-bottom">
-                <img
-                    src='https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/mountains.jpg'
-                    alt="Person in orange jacket by mountain lake"
-                    className="w-full h-full object-cover align-bottom"
-                />
-            </div>
+<div className="w-full relative h-[380px]">
+        <img
+          src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/mountains.jpg"
+          alt="Person in orange jacket by mountain lake"
+          className="w-full h-full object-cover rounded-lg shadow-md"
+        />
+      </div>
+      {/* Text Content Section */}
+      <div className="w-full max-w-5xl mx-auto py-20 px-6">
+        <h2 className="text-3xl font-bold text-[#2d2d2d] mb-6">My Story</h2>
+        <div className="max-w-2xl text-[#565551] text-lg leading-relaxed">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-    );
+      </div>
+
+      {/* Full Width Image Section - Subtle Rounded Edges */}
+      
+    </div>
+  );
 };
 
 export default MyStory;
