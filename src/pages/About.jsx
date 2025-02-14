@@ -35,7 +35,7 @@ const About = () => {
       
       <div className="mb-8">
         <img
-          src="/api/placeholder/150/150"
+          src=""
           alt="Profile"
           className="w-32 h-32 rounded-full border-4 border-gray-300 mx-auto"
         />

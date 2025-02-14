@@ -38,7 +38,7 @@ const Home = () => {
         <div className="relative flex justify-center">
           <div className="absolute inset-0 "></div>
           <img
-            src="public\assets\personart.png"
+            src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/personart.png"
             alt="Profile"
             className="relative  object-cover "
           />
