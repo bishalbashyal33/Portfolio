@@ -9,7 +9,7 @@ import SDGs from '../sections/SDGs';
 import MyStory from '../sections/MyStory';
 import Contact from '../sections/Contact';
 import Awards from '../sections/Awards';
-
+import NotionJourney from '../sections/MyJourney';
 // Create a wrapper component for sections
 const Section = ({ name, children, alternate = false }) => {
   return (
@@ -19,7 +19,7 @@ const Section = ({ name, children, alternate = false }) => {
         alternate ? 'bg-[#ffffff]' : 'bg-[#f3f3f3]'
       }`}
     >
-      <div className="w-[70%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="w-[98%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {children}
       </div>
     </div>
@@ -37,35 +37,39 @@ const HomePage = () => {
         <About />
       </Section>
 
-      <Section name="research" alternate>
+      <Section name="myjourney" alternate>
+        <NotionJourney />
+      </Section>
+
+      <Section name="research" >
         <Research />
       </Section>
 
-      <Section name="professional">
+      <Section name="professional" alternate>
         <Professional />
       </Section>
 
-      <Section name="academia" alternate>
+      <Section name="academia" >
         <Academia />
       </Section>
 
-      <Section name="projects">
+      <Section name="projects" alternate>
         <Projects />
       </Section>
 
-      <Section name="sdgs" alternate>
+      <Section name="sdgs" >
         <SDGs />
       </Section>
 
-      <Section name="awards">
+      <Section name="awards"alternate>
         <Awards />
       </Section>
 
-      <Section name="my-story" alternate>
+      <Section name="my-story" >
         <MyStory />
       </Section>
 
-      <Section name="contact">
+      <Section name="contact" alternate>
         <Contact />
       </Section>
     </>
