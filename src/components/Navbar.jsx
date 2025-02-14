@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';  // Import RouterLink for route navigation
+import { Link } from 'react-scroll';  // Keep Link from react-scroll for scroll behavior
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -58,6 +59,13 @@ const Navbar = () => {
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </Link>
             ))}
+            {/* Add Blogs link using RouterLink for route navigation */}
+            <RouterLink
+              to="/blogs"  // Navigate to /blogs route
+              className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+            >
+              Blogs
+            </RouterLink>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -93,6 +101,13 @@ const Navbar = () => {
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </Link>
           ))}
+          {/* Add Blogs link using RouterLink for mobile menu */}
+          <RouterLink
+            to="/blogs"  // Navigate to /blogs route
+            className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+          >
+            Blogs
+          </RouterLink>
         </div>
       )}
     </motion.nav>
