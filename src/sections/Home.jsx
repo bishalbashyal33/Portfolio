@@ -7,18 +7,18 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight">
-            Hi, I'm <span className="text-gray-900 dark:text-gray-100">Bishal Bashyal</span>
+            Hi👋, I'm <span className="text-gray-900 dark:text-gray-100">Bishal Bashyal</span>
           </h1>
           <div className="text-lg font-medium h-8">
-            <TypeAnimation
+          <TypeAnimation
               sequence={[
-                'FullStack Software Engineer',
+                'FullStack Software Engineer 💻',
                 1000,
-                'AI Researcher',
+                'AI Researcher 🤖',
                 1000,
-                'Quantitative Researcher',
+                'Quantitative Researcher 📊',
                 1000,
-                'Problem Solver',
+                'Problem Solver 🧠',
                 1000
               ]}
               wrapper="span"
@@ -31,8 +31,8 @@ const Home = () => {
             Passionate about building scalable applications and solving complex problems through technology.
           </p>
           <div className="space-x-4">
-            <Button primary>Contact</Button>
-            <Button>Resume</Button>
+            <Button primary>Say Hi! 🛫</Button>
+            <Button>Resume 📃</Button>
           </div>
         </div>
         <div className="relative flex justify-center">

@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="home" smooth={true} duration={500} className="text-black font-bold text-xl cursor-pointer">
-            Bishal
+            Bishal💡
           </Link>
           <div className="flex items-center space-x-6 hidden md:flex">
             {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) => (
@@ -64,7 +64,7 @@ const Navbar = () => {
               to="/blogs"  // Navigate to /blogs route
               className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
             >
-              Blogs
+              Blogs ✍️
             </RouterLink>
           </div>
           <div className="md:hidden flex items-center">
@@ -106,7 +106,7 @@ const Navbar = () => {
             to="/blogs"  // Navigate to /blogs route
             className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
           >
-            Blogs
+            Blogs ✍️
           </RouterLink>
         </div>
       )}

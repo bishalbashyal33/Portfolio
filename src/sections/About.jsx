@@ -37,7 +37,7 @@ const About = () => {
         <img
           src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/profile.png"
           alt="Profile"
-          className="w-32 h-32 rounded-full border-4 border-gray-300 mx-auto bg-gray-400 "
+          className="w-36 h-36 rounded-full border-4 border-gray-500 mx-auto bg-gray-800 "
         />
       </div>
       
