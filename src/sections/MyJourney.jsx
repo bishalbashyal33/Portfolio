@@ -7,14 +7,14 @@ const NotionJourney = () => {
   const journeyData = {
     Education: [
       {
-        logo: "https://via.placeholder.com/60",
+        logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
         title: "Florida State University, Tallahassee FL, USA",
         subtitle: "MS Computer Science",
         period: "2024-2026",
         details: ["Fully Funded with Graduate Assistantship"],
       },
       {
-        logo: "https://via.placeholder.com/60",
+        logo: "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Tribhuvan_University_logo.svg/1200px-Tribhuvan_University_logo.svg.png",
         title: "Tribhuvan University, Pulchowk Campus",
         subtitle: "Bachelor in Computer Engineering",
         period: "2018-2023",
@@ -24,14 +24,14 @@ const NotionJourney = () => {
         ],
       },
       {
-        logo: "https://via.placeholder.com/60",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHXGOEin7cvt-RWdlxMbjXmY6FI49iZJFaQ&s",
         title: "The Time Secondary School",
         subtitle: "Grade 11, 12",
         period: "2016-2018",
         details: ["Fully Funded with OnCampus Residence, IT Co-ordinator at Science Club"],
       },
       {
-        logo: "https://via.placeholder.com/60",
+        logo: "https://theedunepal.ap-south-1.linodeobjects.com/uploads/clients/newenvironmentschool/logo/b9f5b09e0ad828d0d22ced701df1e805-newenvironmentschool.png",
         title: "New Environment English Secondary School",
         subtitle: "Grade 1-10",
         period: "Graduated: 2016",

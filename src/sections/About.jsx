@@ -35,15 +35,16 @@ const About = () => {
       
       <div className="mb-8">
         <img
-          src=""
+          src="public\assets\profile.png"
           alt="Profile"
-          className="w-32 h-32 rounded-full border-4 border-gray-300 mx-auto"
+          className="w-32 h-32 rounded-full border-4 border-gray-300 mx-auto bg-gray-400 "
         />
       </div>
       
-      <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <p className="text-gray-700 mb-12  mx-auto  ">
+      I'm a Research Engineer and share deep passion and interest in System Development, HCI, Computer Vision, LLM, Statistical modeling, IOT, CG Algorithms, and system architecture optimization especially in case of huge datsets. My Research interests include Human Activity Classification on near-Real-time Video feed data For Theft Detection, Early Medical complexity Detection and behavioral interpolation, Document Image Processing and Automation. Edge Integration of Machine Learning on IOT devices, Field isolation and manipulative confinement for RFID systems, RFID wearables, passive tags, Edge Implementation of HF and UHF RF-technology, inventory visibility and analytics, Modeling, forecasting and analyzing Time-Series data in Sustainability projects, Inclusivitiy, security and Privacy in LLMs, Design Interactions and Rendering Optimizations in CG. 
+
+Besides my academic interests, I am also obliged toward sustainability, addressing UN SDGs locally, training 18k+ students, empowering youth technological innovations, and Student-driven Startups. I have been a guest speaker on Sustainability through Technological Innovations and entrepeneurship, and have garnered multiple Int'l award and nominations for my contribution in these fields.
       </p>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
