@@ -1,16 +1,16 @@
 const Button = ({ primary, children, onClick, className = '' }) => {
-    return (
-      <button
-        onClick={onClick}
-        className={`px-6 py-2 rounded-md transition-colors ${
-          primary
-            ? 'bg-[#00A3FF] text-black text-xl hover:bg-[#0081CC]'
-            : 'border border-[#00A3FF] text-[#00A3FF] text-xl hover:bg-[#00A3FF] hover:text-white'
-        } ${className}`}
-      >
-        {children}
-      </button>
-    );
-  };
-  
-  export default Button;
+  return (
+    <button
+      onClick={onClick}
+      className={`px-5 py-2 rounded-lg transition-all font-medium ${
+        primary
+          ? 'bg-black text-white hover:bg-[#333] shadow-md'
+          : 'border border-[#E1E1E1] text-black hover:bg-[#F7F7F7] hover:shadow'
+      } ${className}`}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;

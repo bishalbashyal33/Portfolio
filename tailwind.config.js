@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Fira Sans', 'sans-serif'], // Adds Inter as the default sans font
+      },
+    },
   },
   plugins: [],
 };

@@ -18,10 +18,10 @@ const Section = ({ name, children, alternate = false }) => {
     <Element
       name={name}
       className={`min-h-screen flex items-center justify-center ${
-        alternate ? 'bg-[#011627]' : 'bg-[#01223b]'
+        alternate ?  'bg-[#ffffff]':'bg-[#f3f3f3]' 
       }`}
     >
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="w-[70%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {children}
       </div>
     </Element>
@@ -31,7 +31,11 @@ const Section = ({ name, children, alternate = false }) => {
 const App = () => {
   return (
     <div className="min-h-screen text-white">
+    {/* Wrap Navbar inside a container */}
+    <div className="w-[70%] mx-auto">
       <Navbar />
+    </div>
+
 
       <main className="relative">
         <Section name="home" alternate>

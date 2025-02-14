@@ -3,45 +3,44 @@ import Button from '../components/Button';
 
 const Home = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 pt-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="max-w-4xl mx-auto px-6 pt-20 text-gray-800 dark:text-gray-200">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h1 className="text-5xl font-bold">
-            Hi, I'm <span className="text-[#00A3FF]">Bishal Bashyal</span>
+          <h1 className="text-4xl font-bold leading-tight">
+            Hi, I'm <span className="text-gray-900 dark:text-gray-100">Bishal Bashyal</span>
           </h1>
-          <div className="text-xl h-8"> {/* Fixed height to prevent layout shift */}
+          <div className="text-lg font-medium h-8">
             <TypeAnimation
               sequence={[
                 'FullStack Software Engineer',
                 1000,
-                'React Developer',
+                'AI Researcher',
                 1000,
-                'Node.js Enthusiast',
+                'Quantitative Researcher',
                 1000,
                 'Problem Solver',
                 1000
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: '1.25em', display: 'inline-block', color: '#00A3FF' }}
+              style={{ display: 'inline-block', color: '#4A5568' }}
               repeat={Infinity}
             />
           </div>
-          <p className="text-gray-400 max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          <p className="text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
+            Passionate about building scalable applications and solving complex problems through technology.
           </p>
           <div className="space-x-4">
             <Button primary>Contact</Button>
             <Button>Resume</Button>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute inset-0 bg-[#00A3FF] rounded-full opacity-20 blur-3xl"></div>
+        <div className="relative flex justify-center">
+          <div className="absolute inset-0 "></div>
           <img
-            src="/api/placeholder/600/600"
+            src="src\assets\personart.png"
             alt="Profile"
-            className="relative rounded-full w-[500px] h-[500px] object-cover"
+            className="relative  object-cover "
           />
         </div>
       </div>
