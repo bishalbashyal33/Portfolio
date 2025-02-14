@@ -35,7 +35,7 @@ const About = () => {
       
       <div className="mb-8">
         <img
-          src="public\assets\profile.png"
+          src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/profile.png"
           alt="Profile"
           className="w-32 h-32 rounded-full border-4 border-gray-300 mx-auto bg-gray-400 "
         />
