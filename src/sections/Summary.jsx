@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NotionJourney = () => {
+const Summary = () => {
   const [activeTab, setActiveTab] = useState("Education");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -168,4 +168,4 @@ const NotionJourney = () => {
   );
 };
 
-export default NotionJourney;
+export default Summary;

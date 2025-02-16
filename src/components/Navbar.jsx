@@ -54,7 +54,7 @@ const Navbar = () => {
             Bishal💡
           </Link>
           <div className="flex items-center space-x-6 hidden md:flex">
-            {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) =>
+            {["home", "about","summary", "projects", "professional","research",  "contact"].map((section) =>
               location.pathname === "/" ? (
                 <Link
                   key={section}
@@ -108,7 +108,7 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white shadow-md py-4 space-y-4">
-          {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) =>
+          {["home", "about","projects","summary","professional", "research","contact"].map((section) =>
             location.pathname === "/" ? (
               <Link
                 key={section}
