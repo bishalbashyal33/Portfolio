@@ -9,7 +9,6 @@ import SDGs from '../sections/SDGs';
 import MyStory from '../sections/MyStory';
 import Contact from '../sections/Contact';
 import Awards from '../sections/Awards';
-import NotionJourney from '../sections/Summary';
 import Summary from '../sections/Summary';
 // Create a wrapper component for sections
 const Section = ({ name, children, alternate = false }) => {
@@ -42,15 +41,15 @@ const HomePage = () => {
         <Summary />
       </Section>
 
-      <Section name="projects" alternate>
+      <Section name="projects" >
         <Projects />
       </Section>
 
-      <Section name="research" >
+      <Section name="research" alternate >
         <Research />
       </Section>
 
-      <Section name="professional" alternate>
+      <Section name="professional" >
         <Professional />
       </Section>
 
