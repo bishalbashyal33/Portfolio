@@ -1,18 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link as RouterLink } from 'react-router-dom';  // Import RouterLink for route navigation
-import { Link } from 'react-scroll';  // Keep Link from react-scroll for scroll behavior
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from "react";
+import { Link as RouterLink, useLocation } from "react-router-dom"; // Import useLocation
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
   const scrollTimeout = useRef(null);
+  const location = useLocation(); // Get current route
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY === 0) {
         setVisible(true);
       } else if (currentScrollY > lastScrollY.current) {
@@ -26,18 +27,25 @@ const Navbar = () => {
       scrollTimeout.current = setTimeout(() => setVisible(true), 150);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
       if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
     };
   }, []);
+
+  // Function to handle navigation to homepage before scrolling
+  const handleSectionClick = (section) => {
+    if (location.pathname !== "/") {
+      window.location.href = `/#${section}`; // Navigate to home and scroll
+    }
+  };
 
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: visible ? 0 : -50, opacity: visible ? 1 : 0 }}
-      transition={{ type: 'spring', stiffness: 120, damping: 12 }}
+      transition={{ type: "spring", stiffness: 120, damping: 12 }}
       className="fixed top-10 left-0 right-0 bg-white z-50 shadow-sm border-b border-gray-200"
     >
       <div className="max-w-6xl mx-auto px-6">
@@ -46,23 +54,35 @@ const Navbar = () => {
             Bishal💡
           </Link>
           <div className="flex items-center space-x-6 hidden md:flex">
-            {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) => (
-              <Link
-                key={section}
-                to={section}
-                smooth={true}
-                duration={500}
-                spy={true}
-                activeClass="text-black font-semibold"
-                className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            ))}
-            {/* Add Blogs link using RouterLink for route navigation */}
+            {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) =>
+              location.pathname === "/" ? (
+                <Link
+                  key={section}
+                  to={section}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  activeClass="text-black font-semibold"
+                  className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </Link>
+              ) : (
+                <button
+                  key={section}
+                  onClick={() => handleSectionClick(section)}
+                  className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </button>
+              )
+            )}
+            {/* Highlight Blogs when on the /blogs page */}
             <RouterLink
-              to="/blogs"  // Navigate to /blogs route
-              className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+              to="/blogs"
+              className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${
+                location.pathname === "/blogs" ? "text-black font-semibold" : ""
+              }`}
             >
               Blogs ✍️
             </RouterLink>
@@ -88,23 +108,35 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white shadow-md py-4 space-y-4">
-          {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) => (
-            <Link
-              key={section}
-              to={section}
-              smooth={true}
-              duration={500}
-              spy={true}
-              activeClass="text-black font-semibold"
-              className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          ))}
-          {/* Add Blogs link using RouterLink for mobile menu */}
+          {["home", "about", "research", "academia", "projects", "sdgs", "awards", "my-story", "contact"].map((section) =>
+            location.pathname === "/" ? (
+              <Link
+                key={section}
+                to={section}
+                smooth={true}
+                duration={500}
+                spy={true}
+                activeClass="text-black font-semibold"
+                className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ) : (
+              <button
+                key={section}
+                onClick={() => handleSectionClick(section)}
+                className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </button>
+            )
+          )}
+          {/* Highlight Blogs in mobile menu when on the /blogs page */}
           <RouterLink
-            to="/blogs"  // Navigate to /blogs route
-            className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+            to="/blogs"
+            className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${
+              location.pathname === "/blogs" ? "text-black font-semibold" : ""
+            }`}
           >
             Blogs ✍️
           </RouterLink>

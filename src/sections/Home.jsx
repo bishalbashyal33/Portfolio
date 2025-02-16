@@ -31,9 +31,19 @@ const Home = () => {
             Passionate about building scalable applications and solving complex problems through technology.
           </p>
           <div className="space-x-4">
-            <Button primary>Say Hi! 🛫</Button>
-            <Button>Resume 📃</Button>
-          </div>
+  <Button 
+    primary 
+    onClick={() => window.location.href = "mailto:bishalbash33@gmail.com"}
+  >
+    Say Hi! 🛫
+  </Button>
+  <Button 
+    onClick={() => window.open("https://drive.google.com/file/d/1IFnOuwRz8a-zXukMnYPx1uZMmWjGvJ0F/view?usp=sharing", "_blank")}
+  >
+    Resume 📃
+  </Button>
+</div>
+
         </div>
         <div className="relative flex justify-center">
           <div className="absolute inset-0 "></div>
