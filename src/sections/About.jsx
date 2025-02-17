@@ -49,7 +49,7 @@ Besides my academic interests, I am also obliged toward sustainability, addressi
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {profiles.map((text) => (
-          <Button key={text} className="text-gray-700 border-gray-300 hover:bg-gray-100">{text}</Button>
+          <Button key={text} className="text-gray-700 border-gray-300 hover:bg-gray-100 bg-white">{text}</Button>
         ))}
       </div>
     </div>
