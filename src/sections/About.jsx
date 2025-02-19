@@ -55,5 +55,6 @@ Besides my academic interests, I am also obliged toward sustainability, addressi
     </div>
   );
 };
+//acdemic
 
 export default About;
