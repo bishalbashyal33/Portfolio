@@ -41,11 +41,21 @@ const About = () => {
         />
       </div>
       
-      <p className="text-gray-700 mb-12  mx-auto  ">
-      I'm a Research Engineer and share deep passion and interest in System Development, HCI, Computer Vision, LLM, Statistical modeling, IOT, CG Algorithms, and system architecture optimization especially in case of huge datsets. My Research interests include Human Activity Classification on near-Real-time Video feed data For Theft Detection, Early Medical complexity Detection and behavioral interpolation, Document Image Processing and Automation. Edge Integration of Machine Learning on IOT devices, Field isolation and manipulative confinement for RFID systems, RFID wearables, passive tags, Edge Implementation of HF and UHF RF-technology, inventory visibility and analytics, Modeling, forecasting and analyzing Time-Series data in Sustainability projects, Inclusivitiy, security and Privacy in LLMs, Design Interactions and Rendering Optimizations in CG. 
+      <p className="text-gray-700 mb-12 mx-auto">
+      Natural phenomena when modeled as events are inherently random and at first glance, it is non-intuitive to think about understanding patterns in such random phenomenon.
+      However, Central limit theorem tells us that an aggregation of large random events irrespective of their nature will lead to Gaussian distribution.
+      What is seemingly random at a glance, could soon be studied as following a specific pattern, while we as human beings are able to deduce insights from what seemed impossible to me a few years ago.
+      <br /><br />
+      I believe that we have problems, and there are patterns to exploit, whether through an <b>algorithmic approach in software engineering</b>, learning <b>kernel functions via Neural Networks</b>, trying to predict causality with <b>data science</b>, or leveraging noisy patterns with sensitive <b>risk assessment in Quant</b>.
+      We are always looking for patterns.
+      <br /><br />
+      Patterns are everywhere, so are problems, some more interesting and with more hideous patterns than others.
+      I’m more interested in discovering, leveraging and exploiting such patterns to solve challenging and interesting problems with data, AI and fundamental software Engineering.
+      If this way of thinking resonates with you/your team’s vision.<b> Feel Free to Reachout. </b> I'm currently open to solving interesting industry challenges starting with Summer 2026 Internships.
+      <br /><br />
+      I'm a former <b>Physics Olympiad Champion</b>, and have been fortunate enough to have solved complex problems for Millitary-Grade Tracking Systems, scaled applications on cloud, developed AI powered solution that integrated with LLMs, and sensor data, and have gathered numerous national and international awards along the way.
+</p>
 
-Besides my academic interests, I am also obliged toward sustainability, addressing UN SDGs locally, training 18k+ students, empowering youth technological innovations, and Student-driven Startups. I have been a guest speaker on Sustainability through Technological Innovations and entrepeneurship, and have garnered multiple Int'l award and nominations for my contribution in these fields.
-      </p>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {profiles.map((text) => (
@@ -55,6 +65,6 @@ Besides my academic interests, I am also obliged toward sustainability, addressi
     </div>
   );
 };
-//acdemic
+//academic
 
 export default About;

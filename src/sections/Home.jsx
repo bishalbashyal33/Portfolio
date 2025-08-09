@@ -28,7 +28,7 @@ const Home = () => {
             />
           </div>
           <p className="text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
-            Passionate about building scalable applications and solving complex problems through technology.
+            Passionate about building scalable applications and solving complex problems through technology, data and AI.
           </p>
           <div className="space-x-4">
   <Button 
