@@ -168,7 +168,7 @@ const Summary = () => {
         title: "Invited to HPAIR Conference 2024",
         subtitle: "Harvard University",
         period: "2023",
-        details: ["Selected for attending the HPAIR Conference in Boston in 2024"],
+        details: ["Selected for attending the HPAIR Conference at Harvard University in 2024"],
       },
     ],
     Scholarships: [
