@@ -1,6 +1,6 @@
 # MapReduce:
 
-Bishal Bashyal (080msdsa009)
+Bishal Bashyal 
 
 **Mapper Code:**
 
