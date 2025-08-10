@@ -106,7 +106,7 @@ const Professional = () => {
         "Developed ability to justify, explain and build stories around concepts for Teaching others.",
         "Enhanced public speaking skills, teamwork, and foundational skills on DeepLearning",
         "Strengthened software engineering and Object Oriented Analysis and Design skills",
-        "Built an entrepreneurial mindset and leadership capabilities via HultPrize initaitives"
+        "Built an entrepreneurial mindset and leadership capabilities via HultPrize and Hackathon initiatives"
       ]
     }
   };
