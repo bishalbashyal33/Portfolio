@@ -11,13 +11,13 @@ const projects = [
     title: "DocBite",
     description: "An Information Extraction engine for Structured Text Documents",
     techStack: ["Pytorch", "LayoutLM", "fastapi"],
-    image: "public/assets/docbite.png"
+    image: "https://github.com/bishalbashyal33/hostedpublicassets/blob/main/docbite.png?raw=true"
   },
     {
     title: "TweakCV",
     description: "An AI-powered resume optimization tool that enhances job seekers' profiles using LLMs and also provides templates that were most successful in FAANG companies.",
     techStack: ["Python", "LLMs","React"],
-    image: "public/assets/tweakcv.png"
+    image: "https://github.com/bishalbashyal33/hostedpublicassets/blob/main/tweakcv.png?raw=true"
   },
   {
     title: "3D Rendering Engine",
