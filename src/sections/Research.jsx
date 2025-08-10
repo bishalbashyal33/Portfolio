@@ -8,31 +8,32 @@ import "swiper/css/pagination";
 
 const researchProjects = [
   {
-    title: "AI for Climate Change 🌍",
-    description: "Exploring how artificial intelligence can help mitigate climate change by analyzing global temperature trends. This project uses machine learning to identify patterns and predict climate changes to aid in environmental conservation efforts.",
+    title: "NeuralNet Compression🌍",
+    description: "Research on neural network compression techniques to reduce model size and improve inference speed without significant loss in accuracy.",
     date: "January 2025",
-    author: "Dr. Alex McCarter",
+    author: "Bishal B.",
     image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
   },
+  
   {
-    title: "Quantum Computing 🔬",
-    description: "Research on quantum algorithms that optimize complex computations in cryptography and material sciences. By leveraging quantum bits, this research aims to revolutionize fields like cybersecurity and chemical simulations.",
-    date: "February 2025",
-    author: "Dr. John Smith",
-    image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
-  },
-  {
-    title: "Brain-Computer Interfaces 🧠",
-    description: "Developing non-invasive brain-computer interfaces to assist individuals with motor disabilities. This innovative project focuses on creating devices that can help individuals control devices directly through brain activity.",
-    date: "March 2025",
-    author: "Dr. Emily Zhang",
-    image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
-  },
-  {
-    title: "Renewable Energy Grid ⚡",
-    description: "A study on optimizing smart grids using IoT and AI to integrate renewable energy sources efficiently. The project aims to enhance energy distribution, reduce waste, and improve sustainability by incorporating AI and smart sensors.",
+    title: "Algorithmic Trading ⚡",
+    description: "A study on optimizing trading strategies using LLMs, FINBERT, and AI techniques. The project aims to enhance decision-making processes in financial markets by leveraging data-driven insights.",
     date: "April 2025",
-    author: "Dr. Mark Johnson",
+    author: "Bishal B.",
+    image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
+  },
+  {
+    title: "Information Extraction 🔬",
+    description: "Research on information extraction techniques using deep learning to analyze and extract meaningful data from structured text sources.",
+    date: "February 2025",
+    author: "Bishal B.",
+    image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
+  },
+  {
+    title: "Domain Adaptation 🧠",
+    description: "Research on domain adaptation techniques to improve model performance across different datasets and tasks. This project aims to building techniques to generate domained adapted data in the target set.",
+    date: "March 2025",
+    author: "Bishal B.",
     image: "https://www.unite.ai/wp-content/uploads/2024/05/Alex_Mc_A_futuristic_brain_made_of_circuitry_and_code_connect_c500ebe1-30e9-431c-98ae-ac19aec00ec9_1.png"
   }
 ];

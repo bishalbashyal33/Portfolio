@@ -13,6 +13,12 @@ const projects = [
     techStack: ["Pytorch", "LayoutLM", "fastapi"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
+    {
+    title: "TweakCV",
+    description: "An AI-powered resume optimization tool that enhances job seekers' profiles using LLMs and also provides templates that were most successful in FAANG companies.",
+    techStack: ["Python", "LLMs","React"],
+    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+  },
   {
     title: "Katmatic Bridge",
     description: "An inhouse ETL engine based on fluid templating,filter functions, cron scheduler for Enterprise data Integrations.",
@@ -25,12 +31,7 @@ const projects = [
     techStack: ["Angular", ".NET", "PostgreSQL"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
-  {
-    title: "TweakCV",
-    description: "An AI-powered resume optimization tool that enhances job seekers' profiles using LLMs and also provides templates that were most successful in FAANG companies.",
-    techStack: ["Python", "LLMs","React"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
-  },
+
   {
     title: "Lead Generation Bot",
     description: "A RAG-driven bot that automates lead generation processes, utilizing web scraping and data analysis to identify potential clients.",
