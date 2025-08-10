@@ -11,25 +11,31 @@ const projects = [
     title: "DocBite",
     description: "An Information Extraction engine for Structured Text Documents",
     techStack: ["Pytorch", "LayoutLM", "fastapi"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+    image: "public/assets/docbite.png"
   },
     {
     title: "TweakCV",
     description: "An AI-powered resume optimization tool that enhances job seekers' profiles using LLMs and also provides templates that were most successful in FAANG companies.",
     techStack: ["Python", "LLMs","React"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+    image: "public/assets/tweakcv.png"
+  },
+  {
+    title: "3D Rendering Engine",
+    description: "Built this rendering engine from scratch algorithm and pipeline implementation using C++",
+    techStack: ["C++", "Shaders", "Rasterizers"],
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoy7H9i6LcAf6Iy9NktK7RDvTQyA9Gcadxfu3Uyw4hwFdpLbvwjym1ny3CIFNdNmysQbaNNG58vKXcWBGAPjNEdRJ1dK8VIAbt-FugLTVSBGTdY4VN5lzouzctXBFTGqB40Kb0NnoNUQbRH2P-8R9L5J5-zeE1F-YhxdVwuV2FfAy9q2wNfgrDE2hhkh8o/s1600/Diparshan%20Dahal.png"
   },
   {
     title: "Katmatic Bridge",
     description: "An inhouse ETL engine based on fluid templating,filter functions, cron scheduler for Enterprise data Integrations.",
     techStack: ["Angular", ".NET", "PostgreSQL"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SDJ4sNvYLy3YEY10ZFAlk0SZufS4KuPbAQ&s"
   },
   {
     title: "Katmatic Attendance",
     description: "A comprehensive web-based RF-attendance management system designed for school attendance, featuring real-time tracking and automated reporting.",
     techStack: ["Angular", ".NET", "PostgreSQL"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+    image: "https://www.katmatic.com/wp-content/uploads/2025/01/Attendance-System-Katmatic.png"
   },
 
   {
@@ -38,17 +44,12 @@ const projects = [
     techStack: ["Python", "Scrapy", "Pandas"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
-  {
-    title: "3D Rendering Engine",
-    description: "Built this rendering engine from scratch algorithm and pipeline implementation using C++",
-    techStack: ["C++", "Shaders", "Rasterizers"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
-  },
+  
   {
     title: "RFID Enabled Inventory Management System",
     description: "Contributed to developing an RFID-enabled system for real-time inventory tracking and management.",
     techStack: [".NET", "Angular", "Microservices"],
-    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+    image: "https://www.katmatic.com/wp-content/uploads/2025/01/Inventory-Management-System.png"
   }
 ];
 
