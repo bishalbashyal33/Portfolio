@@ -12,8 +12,7 @@ const Professional = () => {
 
   // Updated JSON data with FSU logo
   const companyData = {
-
-   "Florida State (FSU)": {
+    "Florida State (FSU)": {
       logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
       techStack: [
         "Python (PyTorch)",
@@ -61,7 +60,6 @@ const Professional = () => {
         "Developed strong problem-solving skills in time-sensitive high-pressure situations"
       ]
     },
-    
     "FuseMachines": {
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrn4MwotHet5UgoXAGQuFdz25AeN9a7r4Uog&s",
       techStack: [
@@ -90,7 +88,6 @@ const Professional = () => {
         "Python,FastAPI,LayoutLM,Pytorch",
         "Reactjs, Tailwindcss",
         "Mongodb,Firebase,Postgresql",
-        
       ],
       contributions: [
         "Built a Web Information Extraction Engine for Structured Text Documents",
@@ -131,7 +128,7 @@ const Professional = () => {
   );
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center p-4">
+    <div className="min-h-screen w-full flex flex-col items-center p-4 overflow-x-hidden">
       <div className="w-full max-w-4xl bg-white p-4 sm:p-6">
         {/* Header Section */}
         <div className="text-center mb-6">
@@ -144,9 +141,9 @@ const Professional = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 overflow-x-hidden">
           {/* Vertical Tabs */}
-          <div className="flex flex-col space-y-2 w-12 sm:w-48 flex-shrink-0">
+          <div className="flex sm:flex-col space-x-2 sm:space-x-0 sm:space-y-2 w-full sm:w-48 flex-shrink-0">
             {companies.map((company) => (
               <button
                 key={company}
@@ -161,9 +158,9 @@ const Professional = () => {
                 <img
                   src={companyData[company].logo}
                   alt={company}
-                  className="w-8 h-8 rounded-lg"
+                  className="w-8 h-8 rounded-lg flex-shrink-0"
                 />
-                <span className="ml-3 text-sm font-medium hidden sm:block">
+                <span className="ml-3 text-sm font-medium hidden sm:block truncate">
                   {company}
                 </span>
               </button>
@@ -171,19 +168,19 @@ const Professional = () => {
           </div>
 
           {/* Content Area */}
-          <div className="flex-1">
-            <div className="bg-white p-4 sm:p-6 rounded-lg border border-gray-200">
-              <div className="flex items-center mb-6">
+          <div className="flex-1 min-w-0">
+            <div className="bg-white p-3 sm:p-6 rounded-lg border border-gray-200">
+              <div className="flex items-center mb-6 flex-wrap">
                 <img
                   src={companyData[activeTab].logo}
                   alt={activeTab}
                   className="w-12 h-12 rounded-lg"
                 />
-                <h2 className="text-xl font-semibold text-gray-800 ml-4">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 ml-4">
                   {activeTab}
                 </h2>
               </div>
-              
+
               {renderSection("Tech Stack", companyData[activeTab].techStack)}
               {renderSection("Contributions", companyData[activeTab].contributions)}
               {renderSection("Achievements", companyData[activeTab].achievements)}

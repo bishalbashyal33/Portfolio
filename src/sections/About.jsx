@@ -3,9 +3,9 @@ import Button from '../components/Button';
 
 const About = () => {
   const socialLinks = [
-    { Icon: FaGithub, href: '#' },
-    { Icon: FaLinkedin, href: '#' },
-    { Icon: FaInstagram, href: '#' },
+    { Icon: FaGithub, href: 'https://github.com/bishalbashyal33/Portfolio' },
+    { Icon: FaLinkedin, href: 'https://www.linkedin.com/in/bishal-bashyal-80a261184/' },
+    { Icon: FaInstagram, href: 'https://www.instagram.com/bishalbashyal/' },
   ];
 
   const profiles = [
