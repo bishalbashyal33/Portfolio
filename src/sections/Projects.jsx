@@ -5,29 +5,48 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+
 const projects = [
   {
-    title: "Katmatic Attendance Web",
-    description: "A comprehensive web-based attendance management system designed for enterprises, featuring real-time tracking and automated reporting.",
-    techStack: ["React", "Django", "PostgreSQL"],
+    title: "DocBite",
+    description: "An Information Extraction engine for Structured Text Documents",
+    techStack: ["Pytorch", "LayoutLM", "fastapi"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
   {
-    title: "Semantic Information Extractor Cron Task",
-    description: "An automation tool that extracts and processes semantic information from unstructured data sources, enhancing data insights.",
-    techStack: ["Python", "NLP", "CRON"],
+    title: "Katmatic Bridge",
+    description: "An inhouse ETL engine based on fluid templating,filter functions, cron scheduler for Enterprise data Integrations.",
+    techStack: ["Angular", ".NET", "PostgreSQL"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
   {
-    title: "Ludo Multiplayer Game",
-    description: "A real-time multiplayer Ludo game with room-based invites, built using React and Django with WebSockets.",
-    techStack: ["React", "Django", "WebSockets"],
+    title: "Katmatic Attendance",
+    description: "A comprehensive web-based RF-attendance management system designed for school attendance, featuring real-time tracking and automated reporting.",
+    techStack: ["Angular", ".NET", "PostgreSQL"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   },
   {
-    title: "Big Data Analysis Pipeline",
-    description: "A scalable pipeline leveraging Hadoop and Spark for processing large-scale datasets, featuring efficient data summarization and visualization.",
-    techStack: ["Hadoop", "Spark", "Python"],
+    title: "TweakCV",
+    description: "An AI-powered resume optimization tool that enhances job seekers' profiles using LLMs and also provides templates that were most successful in FAANG companies.",
+    techStack: ["Python", "LLMs","React"],
+    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+  },
+  {
+    title: "Lead Generation Bot",
+    description: "A RAG-driven bot that automates lead generation processes, utilizing web scraping and data analysis to identify potential clients.",
+    techStack: ["Python", "Scrapy", "Pandas"],
+    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+  },
+  {
+    title: "3D Rendering Engine",
+    description: "Built this rendering engine from scratch algorithm and pipeline implementation using C++",
+    techStack: ["C++", "Shaders", "Rasterizers"],
+    image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
+  },
+  {
+    title: "RFID Enabled Inventory Management System",
+    description: "Contributed to developing an RFID-enabled system for real-time inventory tracking and management.",
+    techStack: [".NET", "Angular", "Microservices"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024"
   }
 ];
