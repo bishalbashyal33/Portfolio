@@ -12,7 +12,8 @@ const Professional = () => {
 
   // Updated JSON data with FSU logo
   const companyData = {
-    "Katmatic Solutions": {
+
+   "Florida State (FSU)": {
       logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
       techStack: [
         "Python (TensorFlow, PyTorch)",
@@ -36,32 +37,33 @@ const Professional = () => {
         "Developed strong problem-solving skills in high-pressure situations"
       ]
     },
-    "GForceSecurity": {
-      logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
+    "Katmatic Solutions": {
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96HS5bW8rebdSKp4v4ud_z682QJKmgdy4RQ&s",
       techStack: [
-        "Java, Spring Boot",
-        "React, TypeScript",
-        "Azure Cloud Services",
-        "Elasticsearch"
+        "Python (TensorFlow, PyTorch)",
+        "AWS (EC2, S3, Lambda)",
+        "Docker, Kubernetes",
+        "MongoDB, PostgreSQL"
       ],
       contributions: [
-        "Architected and built enterprise security platform",
-        "Implemented real-time threat detection system",
-        "Developed automated security audit tools"
+        "Developed machine learning algorithms for predictive analytics",
+        "Led the implementation of automated data pipeline system",
+        "Optimized model deployment process reducing inference time by 40%"
       ],
       achievements: [
-        "Platform adopted by 5 major enterprise clients",
-        "Filed 2 patents for security innovations",
-        "Reduced false positive alerts by 60%"
+        "Successfully delivered 3 major ML projects ahead of schedule",
+        "Reduced cloud infrastructure costs by 30%",
+        "Awarded 'Best Technical Innovation' for Q2 2023"
       ],
       personalityUpgrades: [
-        "Developed expertise in crisis management",
-        "Enhanced cross-functional team collaboration skills",
-        "Improved technical documentation abilities"
+        "Enhanced leadership skills by managing a team of 4 developers",
+        "Improved client communication through regular technical presentations",
+        "Developed strong problem-solving skills in high-pressure situations"
       ]
     },
+    
     "FuseMachines": {
-      logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrn4MwotHet5UgoXAGQuFdz25AeN9a7r4Uog&s",
       techStack: [
         "Python (spaCy, NLTK)",
         "Node.js, Express",
@@ -84,8 +86,8 @@ const Professional = () => {
         "Developed mentoring capabilities"
       ]
     },
-    "HultPrize": {
-      logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
+    "Pulchowk Campus": {
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStukpbzZJVI7CZsdcUn37z6iJ1-oT8soZNsQ&s",
       techStack: [
         "Flutter",
         "Firebase",
@@ -138,7 +140,7 @@ const Professional = () => {
             Professional Experience
           </h1>
           <p className="text-sm sm:text-base text-gray-500">
-            A brief summary of what I have done in professional settings
+            A brief summary of what I have done in professional & semi-professional settings
           </p>
         </div>
 
