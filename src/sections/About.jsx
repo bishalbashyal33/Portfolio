@@ -42,7 +42,7 @@ const About = () => {
       </div>
       
       <p className="text-gray-700 mb-12 mx-auto">
-      I’m a current MS CS student(Research Track) working in interesting research challenges under the supervision of Professor Dr. Shayok Chakraborty at <b>Florida State University</b>, Tallahassee Florida. I'm a former <b>Physics Olympiad Champion</b>, and have been fortunate enough to have had the opportunity to solve complex problems for <b>Millitary-Grade Tracking Systems</b>, scaled applications on cloud, developed <b>AI powered solutions</b> that integrated with LLMs, and sensor data, and have gathered numerous national and international awards along the way.
+      I’m a current MS CS student (Research Track) working in interesting research challenges under the supervision of Professor Dr. Shayok Chakraborty at <b>Florida State University</b>, Tallahassee Florida. I'm a former <b>Physics Olympiad Champion</b>, and have been fortunate enough to have had the opportunity to solve complex problems for <b>Millitary-Grade Tracking Systems</b>, scaled applications on cloud, developed <b>AI powered solutions</b> that integrated with LLMs, and sensor data, and have gathered numerous national and international awards along the way.
       <br /><br />
       I'm currently open to solving interesting industry challenges in the domain of data(Quantitative), AI and fundamental software engineering starting with Summer 2026 Internships.
 </p>
