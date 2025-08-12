@@ -33,7 +33,7 @@ const Home = () => {
           <div className="space-x-4">
   <Button 
     primary 
-    onClick={() => window.location.href = "mailto:bishalbash33@gmail.com"}
+    onClick={() => window.location.href = "mailto:bishalbash333@gmail.com"}
   >
     Say Hi! 🛫
   </Button>
