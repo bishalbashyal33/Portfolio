@@ -1,8 +1,7 @@
 # 🌐 Hi Good People
 
 
-Welcome to the repository for my good old notion-color palette personal website!  
-This site showcases my projects, skills, and experience and writeups in AI, Data and Softwares. I am also planning to update some summaries of my research works via blogs soon(once my time allows).
+Welcome to my personal website. I am planning to update some summaries of my research works via blogs soon(once my time allows).
 
 ![Portfolio Preview](resources/image.png)
 
