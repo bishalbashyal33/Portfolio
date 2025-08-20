@@ -38,7 +38,7 @@ const Home = () => {
     Say Hi! 🛫
   </Button>
   <Button 
-    onClick={() => window.open("https://drive.google.com/file/d/154MKYDIN242J5KCJ0F5lt337mkWHEFIs/view?usp=sharing", "_blank")}
+    onClick={() => window.open("https://drive.google.com/file/d/1NlwuOu16xQb0bfC1YaaROzk-MIvXkFru/view?usp=sharing", "_blank")}
   >
     Resume 📃
   </Button>
