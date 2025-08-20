@@ -84,6 +84,17 @@ const Summary = () => {
         ],
       },
       {
+        logo: "https://imgs.search.brave.com/X2DnTD7w_w6oyo5aAKjEWzTvIZQ-trWJIxMDSCn0_vA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29sbGVnZXNuZXBh/bC5jb20vY24vaW1n/L2Y5NDM2NTdiODhl/MGJiZTNkOTdhZGIy/Y2UxNTYzNTJiNjgz/MDA5ZGQyMTA0ODUu/MDY1MzE5MjEuanBn",
+        title: "IOE Pulchowk Campus, Lalitpur, Nepal",
+        subtitle: "Research Assistant | Part Time Contract",
+        period: "2022 June -2023 April",
+        details: ["Led industry-funded research on Document Image Understanding achieving F1-score of 0.92 on IRS-990 forms using LayoutLMV2",
+          "Built a plant disease detection system with CNN and LVQ navigating challenges caused by high contrast and variable brightness in images.",
+          "Built custom annotation tool with React and FastAPI, annotated 450-page dataset for model training.",
+          "Developed MVP prototype delivered to funding company (Docsumo) with formal research report."
+        ],
+      },
+      {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1x4uiASSALyoRI15lAVHebWNq7P7UtS_SA&s",
         title: "Hultprize, Pulchowk Campus, Nepal",
         subtitle: "Campus Director",
