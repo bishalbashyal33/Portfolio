@@ -56,7 +56,7 @@ const Summary = () => {
         title: "Katmatic Solutions Private Limited, Kathmandu, Nepal",
         subtitle: "R&D Engineer (AI, IOT FullStack) | Full-Time Role",
         period: "2023 May -2024 Dec",
-        details: ["Built core functionalities and integration mechanisms for  a Wireless Weapon Tracking System for UN Base Headquarters", 
+        details: ["Collaborated with cross-functional teams to develop core functionalities and integration mechanisms for  a Wireless Weapon Tracking System for UN Base Headquarters", 
           "Helped Build a Radio Frequency enabled Student Tracking System, Used RSSI strengths, log-timestamps, and numerous features to build a proprietary Machine Learning model that identified student going in and going out Patterns based on Hopeland RF-antennas",
           "Managed, Maintained and Deployed pods on Azure Kubernetes, and oversaw System Deployment on Private infra of UN base",
           "Worked with mqtt, eventhub, and setup proper routes on apigateway for microservice implementation. also deployed the system for local debugging on docker.worked with python and py packages for complex mathematical and AI models simulaton and development.", 
@@ -70,7 +70,7 @@ const Summary = () => {
         subtitle: "R&D Intern (AI, IOT) | Full-Time Role",
         period: "2023 Jan -2023 May",
         details: ["Solo Built a Kiosk Based Visitor Management System on Raspberry Pi, using RFID and modbus protocol on top of Avalonia. Utilized the backbone of existing microservices for building an integrated solution.",
-          "Built a feature that performed Data querying, pre-processing and Analysis on existing inventory data for the Inventory Management System Product lineup and utilized langchain to generate explainable reports of missing inventories, lowstock and expected orders for Stakeholders"
+          "Collaborated with the Inventory Processing team to build a feature that performed Data querying, pre-processing and Analysis on existing inventory data for the Inventory Management System Product lineup and utilized langchain to generate explainable reports of missing inventories, lowstock and expected orders for Stakeholders"
         ],
       },
       {
