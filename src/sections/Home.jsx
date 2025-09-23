@@ -12,9 +12,9 @@ const Home = () => {
           <div className="text-lg font-medium h-8">
           <TypeAnimation
               sequence={[
-                'AI Researcher 🤖',
-                1000,
                 'FullStack Software Engineer 💻',
+                1000,
+                'AI Researcher 🤖',
                 1000,
                 'Quantitative Researcher 📊',
                 1000,
