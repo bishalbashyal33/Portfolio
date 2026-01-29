@@ -23,7 +23,7 @@ const Home = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ display: 'inline-block', color: '#4A5568' }}
+              style={{ display: 'inline-block', color: '#111827' }}
               repeat={Infinity}
             />
           </div>

@@ -1,5 +1,7 @@
 [
   "blog1",
   "llm-lora-tuning",
-  "scalable-rag"
+  "scalable-rag",
+  "claim-audit",
+  "medical-summary"
 ]
