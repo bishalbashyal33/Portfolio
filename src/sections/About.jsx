@@ -30,22 +30,22 @@ const About = () => {
           </a>
         ))}
       </div>
-      
+
       <h2 className="text-4xl font-semibold text-gray-800 mb-8">About Me</h2>
-      
+
       <div className="mb-8">
         <img
           src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/profile.png"
-          alt="Profile"
+          alt="Bishal Bashyal - AI Researcher & Software Engineer"
           className="w-36 h-36 rounded-full border-4 border-gray-500 mx-auto bg-gray-800 "
         />
       </div>
-      
+
       <p className="text-gray-700 mb-12 mx-auto">
-      I’m a current MS CS student (Research Track) working in interesting research challenges under the supervision of Professor Dr. Shayok Chakraborty at <b>Florida State University</b>, Tallahassee Florida. I'm also a former <b>Physics Olympiad Champion</b>, and have been fortunate enough to have had the opportunity to solve complex problems for <b>Millitary-Grade Tracking Systems</b>, scaled applications on cloud, developed <b>AI powered solutions</b> that integrated with LLMs, and sensor data, and have gathered numerous national and international awards along the way.
-      <br /><br />
-      I'm currently open to solving interesting industry challenges in the domain of  fundamental software engineering,data (Quantitative) and AI and starting with Summer 2026 Internships.
-</p>
+        I’m a current MS CS student (Research Track) working in interesting research challenges under the supervision of Professor Dr. Shayok Chakraborty at <b>Florida State University</b>, Tallahassee Florida. I'm also a former <b>Physics Olympiad Champion</b>, and have been fortunate enough to have had the opportunity to solve complex problems for <b>Millitary-Grade Tracking Systems</b>, scaled applications on cloud, developed <b>AI powered solutions</b> that integrated with LLMs, and sensor data, and have gathered numerous national and international awards along the way.
+        <br /><br />
+        I'm currently open to solving interesting industry challenges in the domain of  fundamental software engineering,data (Quantitative) and AI and starting with Summer 2026 Internships.
+      </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {profiles.map((text) => (

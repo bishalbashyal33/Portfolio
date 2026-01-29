@@ -49,7 +49,7 @@ const Home = () => {
           <div className="absolute inset-0 "></div>
           <img
             src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/personart.png"
-            alt="Profile"
+            alt="Bishal Bashyal - AI Software Engineer & FullStack Developer"
             className="relative  object-cover "
           />
         </div>
