@@ -1,7 +1,8 @@
 [
-  "blog1",
+  "agent-hallucination",
+  "multi-agent-systems",
+  "distributed-rag",
   "llm-lora-tuning",
-  "scalable-rag",
   "claim-audit",
   "medical-summary"
 ]
