@@ -10,11 +10,11 @@ const Home = () => {
             Hi👋, I'm <span className="text-gray-900 dark:text-gray-100">Bishal Bashyal</span>
           </h1>
           <div className="text-lg font-medium h-8">
-          <TypeAnimation
+            <TypeAnimation
               sequence={[
-                'FullStack Software Engineer 💻',
+                'AI Software Engineer and Researcher 🤖',
                 1000,
-                'AI Researcher 🤖',
+                'FullStack Software Engineer 💻',
                 1000,
                 'Quantitative Researcher 📊',
                 1000,
@@ -31,25 +31,25 @@ const Home = () => {
             Passionate about building scalable applications and solving complex problems through technology, data and AI.
           </p>
           <div className="space-x-4">
-  <Button 
-    primary 
-    onClick={() => window.location.href = "mailto:bishalbash333@gmail.com"}
-  >
-    Say Hi! 🛫
-  </Button>
-  <Button 
-    onClick={() => window.open("https://drive.google.com/file/d/145SqCw4An4PDyNWT2BW8rZSSI-Ef2CCN/view?usp=sharing", "_blank")}
-  >
-    Resume 📃
-  </Button>
-</div>
+            <Button
+              primary
+              onClick={() => window.location.href = "mailto:bishalbash333@gmail.com"}
+            >
+              Say Hi! 🛫
+            </Button>
+            <Button
+              onClick={() => window.open("https://drive.google.com/file/d/145SqCw4An4PDyNWT2BW8rZSSI-Ef2CCN/view?usp=sharing", "_blank")}
+            >
+              Resume 📃
+            </Button>
+          </div>
 
         </div>
         <div className="relative flex justify-center">
           <div className="absolute inset-0 "></div>
           <img
             src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/personart.png"
-            alt="Bishal Bashyal - AI Software Engineer & FullStack Developer"
+            alt="Bishal Bashyal - AI Software Engineer and Researcher"
             className="relative  object-cover "
           />
         </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
             Bishal💡
           </Link>
           <div className="flex items-center space-x-6 hidden md:flex">
-            {["home", "about","summary", "projects", "professional","research",  "contact"].map((section) =>
+            {["home", "about", "summary", "projects", "professional", "research", "contact"].map((section) =>
               location.pathname === "/" ? (
                 <Link
                   key={section}
@@ -80,12 +80,19 @@ const Navbar = () => {
             {/* Highlight Blogs when on the /blogs page */}
             <RouterLink
               to="/blogs"
-              className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${
-                location.pathname === "/blogs" ? "text-black font-semibold" : ""
-              }`}
+              className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${location.pathname === "/blogs" ? "text-black font-semibold" : ""
+                }`}
             >
               Blogs ✍️
             </RouterLink>
+            <a
+              href="https://apps.bishalb.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+            >
+              My Apps 🚀
+            </a>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -108,7 +115,7 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white shadow-md py-4 space-y-4">
-          {["home", "about","projects","summary","professional", "research","contact"].map((section) =>
+          {["home", "about", "projects", "summary", "professional", "research", "contact"].map((section) =>
             location.pathname === "/" ? (
               <Link
                 key={section}
@@ -134,12 +141,19 @@ const Navbar = () => {
           {/* Highlight Blogs in mobile menu when on the /blogs page */}
           <RouterLink
             to="/blogs"
-            className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${
-              location.pathname === "/blogs" ? "text-black font-semibold" : ""
-            }`}
+            className={`text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer ${location.pathname === "/blogs" ? "text-black font-semibold" : ""
+              }`}
           >
             Blogs ✍️
           </RouterLink>
+          <a
+            href="https://apps.bishalb.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black transition-colors duration-200 cursor-pointer"
+          >
+            My Apps 🚀
+          </a>
         </div>
       )}
     </motion.nav>

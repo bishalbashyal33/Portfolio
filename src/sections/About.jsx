@@ -36,7 +36,7 @@ const About = () => {
       <div className="mb-8">
         <img
           src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/profile.png"
-          alt="Bishal Bashyal - AI Researcher & Software Engineer"
+          alt="Bishal Bashyal - AI Software Engineer and Researcher"
           className="w-36 h-36 rounded-full border-4 border-gray-500 mx-auto bg-gray-800 "
         />
       </div>
