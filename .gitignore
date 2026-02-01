@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# SEO Documentation (local reference only)
+SEO_GUIDE.md
+SEO_CHECKLIST.md
+SEO_SUMMARY.md
+START_HERE.md
+SOCIAL_MEDIA_CALENDAR.md
+submit-urls.sh
