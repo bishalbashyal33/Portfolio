@@ -6,16 +6,15 @@ import Footer from '../sections/Footer';
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen text-white">
-      {/* Wrap Navbar inside a container */}
-      <div className="w-[70%] mx-auto">
+      <header className="fixed top-0 left-0 right-0 z-50">
         <UnderConstructionBanner />
         <Navbar />
-      </div>
-      
+      </header>
+
       <main className="relative">
         {children}
       </main>
-      
+
       <Footer />
     </div>
   );

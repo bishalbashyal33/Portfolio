@@ -46,13 +46,13 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: visible ? 0 : -50, opacity: visible ? 1 : 0 }}
       transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="fixed top-10 left-0 right-0 bg-white z-50 shadow-sm border-b border-gray-200"
+      className="w-full bg-white shadow-sm border-b border-gray-200"
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="home" smooth={true} duration={500} className="text-black font-bold text-xl cursor-pointer">
+          <RouterLink to="/" className="text-black font-bold text-xl cursor-pointer">
             Bishal💡
-          </Link>
+          </RouterLink>
           <div className="flex items-center space-x-6 hidden md:flex">
             {["home", "about", "summary", "projects", "professional", "research", "contact"].map((section) =>
               location.pathname === "/" ? (
