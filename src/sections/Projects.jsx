@@ -49,6 +49,13 @@ const projects = [
     demoLink: "https://github.com/bishalbashyal33/leadgen-bot"
   },
   {
+    title: "ClaimAudit",
+    description: "An AI-powered medical claim adjudication platform that uses RAG and Agentic AI to audit claims against payer policies.",
+    techStack: ["Next.js", "FastAPI", "Gemini", "LangGraph"],
+    image: "https://raw.githubusercontent.com/bishalbashyal33/claimsaudit/main/resources/dashboard_screenshot.png",
+    demoLink: "https://claimsaudit.bishalb.com"
+  },
+  {
     title: "RFID Enabled Inventory Management System",
     description: "Contributed to developing an RFID-enabled system for real-time inventory tracking and management.",
     techStack: [".NET", "Angular", "Microservices"],
@@ -94,16 +101,16 @@ const Project = () => {
                   className="w-full h-48 object-cover"
                 />
               </div>
-              
+
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3 line-clamp-2">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">
                   {project.description}
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech, idx) => (
@@ -115,7 +122,7 @@ const Project = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   {project.demoLink && (
                     <a
                       href={project.demoLink}
