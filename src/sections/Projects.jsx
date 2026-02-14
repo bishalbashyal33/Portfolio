@@ -7,6 +7,13 @@ import "swiper/css/pagination";
 
 const projects = [
   {
+    title: "ClaimAudit",
+    description: "An AI-powered medical claim adjudication platform that uses RAG and Agentic AI to audit claims against payer policies.",
+    techStack: ["Next.js", "FastAPI", "Gemini", "LangGraph"],
+    image: "https://raw.githubusercontent.com/bishalbashyal33/claimsaudit/main/resources/dashboard_screenshot.png",
+    demoLink: "https://claimsaudit.bishalb.com"
+  },
+  {
     title: "DocBite",
     description: "An Information Extraction engine for Structured Text Documents",
     techStack: ["Pytorch", "LayoutLM", "fastapi"],
@@ -47,13 +54,6 @@ const projects = [
     techStack: ["Python", "Langchain", "Pandas"],
     image: "https://www.cio.com/wp-content/uploads/2023/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-orig-1.jpg?quality=50&strip=all&w=1024",
     demoLink: "https://github.com/bishalbashyal33/leadgen-bot"
-  },
-  {
-    title: "ClaimAudit",
-    description: "An AI-powered medical claim adjudication platform that uses RAG and Agentic AI to audit claims against payer policies.",
-    techStack: ["Next.js", "FastAPI", "Gemini", "LangGraph"],
-    image: "https://raw.githubusercontent.com/bishalbashyal33/claimsaudit/main/resources/dashboard_screenshot.png",
-    demoLink: "https://claimsaudit.bishalb.com"
   },
   {
     title: "RFID Enabled Inventory Management System",
