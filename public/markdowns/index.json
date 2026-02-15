@@ -4,5 +4,6 @@
   "distributed-rag",
   "llm-lora-tuning",
   "claim-audit",
-  "medical-summary"
+  "medical-summary",
+  "nepali-mt-pipeline"
 ]
