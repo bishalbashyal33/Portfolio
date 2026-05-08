@@ -46,6 +46,7 @@ const Professional = () => {
       ],
       contributions: [
         "Developed machine learning algorithms for predictive inventory analytics and RSSI patterns for passive tag tracking",
+        "Built time series models over RF sensor data to detect spatial and behavioral patterns for real-time asset tracking",
         "Led the implementation of a Generic ETL Engine for Enterprise Data Integrations using Fluid Templating",
         "Reduced False Positive signal received on tracking passive tags with RF-Antenaas by 15%"
       ],
