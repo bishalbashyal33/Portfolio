@@ -4,7 +4,7 @@ import Layout from './components/Layout'; // Adjust path if necessary
 import HomePage from './pages/HomePage';
 import BlogsPage from './pages/BlogsPage';
 import BlogPost from './pages/BlogPost';
-
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blog/:folder" element={<BlogPost />} />
       </Routes>
+      <Analytics />
     </Layout>
   );
 };
