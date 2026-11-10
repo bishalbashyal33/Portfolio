@@ -45,6 +45,17 @@ const Summary = () => {
     ],
     Experience: [
       {
+        logo: "https://www.google.com/s2/favicons?domain=prolaio.com&sz=128",
+        title: "Prolaio",
+        subtitle: "Data Science (Biomarkers) Intern",
+        period: "2026 Jun - 2026 Aug",
+        details: [
+          "Helped design breakthrough algorithms for clinically significant Heart Failure biomarkers",
+          "Built JSON-driven auto-research tools for rapid algorithmic prototyping of statistical and deep learning based DBM algorithms",
+          "Designed pseudo-twin algorithms that counteract model bias on specific demographics"
+        ],
+      },
+      {
         logo: "https://upload.wikimedia.org/wikipedia/en/6/6b/Florida_State_University_seal.svg",
         title: "Florida State University, Tallahassee FL, USA",
         subtitle: "Graduate Assistant ",
