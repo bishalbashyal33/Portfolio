@@ -96,6 +96,7 @@ const Project = () => {
             >
               <div className="aspect-w-16 aspect-h-9 w-full">
                 <img
+                  loading="lazy"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"

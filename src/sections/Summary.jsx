@@ -321,6 +321,7 @@ const Summary = () => {
                 className="flex flex-col sm:flex-row items-start p-3 sm:p-4 bg-white hover:bg-gray-50 rounded-lg border border-gray-200 transition duration-150 mb-4"
               >
                 <img
+                  loading="lazy"
                   src={item.logo}
                   alt=""
                   className="w-12 h-12 rounded-full object-cover mb-3 sm:mb-0 sm:mr-4"

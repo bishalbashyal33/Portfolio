@@ -64,8 +64,11 @@ const Home = () => {
         <div className="relative flex justify-center">
           <div className="absolute inset-0 "></div>
           <img
-            src="https://raw.githubusercontent.com/bishalbashyal33/hostedpublicassets/refs/heads/main/personart.png"
+            src="/assets/personart.png"
             alt="Bishal Bashyal - AI Software Engineer and Researcher"
+            width={900}
+            height={900}
+            fetchPriority="high"
             className="relative  object-cover "
           />
         </div>

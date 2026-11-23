@@ -157,6 +157,7 @@ const Professional = () => {
                 title={company}
               >
                 <img
+                  loading="lazy"
                   src={companyData[company].logo}
                   alt={company}
                   className="w-8 h-8 rounded-lg flex-shrink-0"
@@ -173,6 +174,7 @@ const Professional = () => {
             <div className="bg-white p-3 sm:p-6 rounded-lg border border-gray-200">
               <div className="flex items-center mb-6 flex-wrap">
                 <img
+                  loading="lazy"
                   src={companyData[activeTab].logo}
                   alt={activeTab}
                   className="w-12 h-12 rounded-lg"
