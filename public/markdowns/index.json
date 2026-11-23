@@ -1,4 +1,6 @@
 [
+  "wearable-biomarkers-ecg-ppg",
+  "wearable-signal-filtering",
   "agent-hallucination",
   "multi-agent-systems",
   "distributed-rag",
