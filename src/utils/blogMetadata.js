@@ -4,6 +4,7 @@ export const siteName = "Bishal Bashyal Portfolio";
 export const defaultBlogImage = `${siteUrl}/assets/personart.png`;
 
 const publicationDates = {
+  "mobile-eeg-walking-auditory-erp": "2026-11-23",
   "pulse-arrival-vs-transit-time": "2026-11-23",
   "ssvep-eeg-speller-idle-decoding": "2026-11-23",
   "ppg-afib-alert-ecg-validation": "2026-11-23",
