@@ -1,4 +1,5 @@
 [
+  "ear-eeg-sleep-staging",
   "wearable-biomarkers-ecg-ppg",
   "wearable-signal-filtering",
   "ppg-to-ecg",
