@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import NotionMarkdownRenderer from "../components/NotionMarkDownRenderer";
 import SEO from "../components/SEO";
-import { getBlogMetadata } from "../utils/blogMetadata";
+import { formatPublicationDate, getBlogMetadata } from "../utils/blogMetadata";
 import { FaLinkedin, FaInstagram, FaGithub, FaLink } from "react-icons/fa";
 
 const BlogPost = () => {
@@ -12,7 +12,6 @@ const BlogPost = () => {
     excerpt: "",
     thumbnail: "",
     content: "",
-    date: "February 6, 2025", // Default if not found
     exists: true,
     loading: true
   });
@@ -29,7 +28,6 @@ const BlogPost = () => {
         setBlogData({
           ...getBlogMetadata(markdown, folder),
           content: markdown,
-          date: "February 6, 2025",
           exists: true,
           loading: false
         });
@@ -99,6 +97,7 @@ const BlogPost = () => {
         description={blogData.excerpt}
         image={blogData.thumbnail}
         url={`/blog/${folder}`}
+        publishedDate={blogData.publishedDate}
       />
 
       <article className="max-w-6xl mx-auto px-4 lg:px-8">
@@ -128,7 +127,15 @@ const BlogPost = () => {
                 />
                 <div>
                   <p className="font-bold text-gray-900 text-lg">Bishal Bashyal</p>
-                  <p className="text-gray-500 text-sm">Updated {blogData.date}</p>
+                  <p className="text-gray-500 text-sm">
+                    {blogData.publishedDate && (
+                      <>
+                        <time dateTime={blogData.publishedDate}>{formatPublicationDate(blogData.publishedDate)}</time>
+                        <span className="mx-2">•</span>
+                      </>
+                    )}
+                    {blogData.readingMinutes} min read
+                  </p>
                 </div>
               </div>
 

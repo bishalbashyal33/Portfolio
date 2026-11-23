@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { siteName, siteUrl } from '../utils/blogMetadata';
 
-const SEO = ({ title, description, image, url, type = 'article', author = 'Bishal Bashyal' }) => {
+const SEO = ({ title, description, image, url, publishedDate, type = 'article', author = 'Bishal Bashyal' }) => {
     const fullTitle = `${title} | ${siteName}`;
     const canonicalUrl = new URL(url, siteUrl).href;
     const twitterHandle = '@bishalbashyal'; // Update if you have one
@@ -22,6 +22,8 @@ const SEO = ({ title, description, image, url, type = 'article', author = 'Bisha
             <meta property="og:image" content={image} />
             <meta property="og:site_name" content={siteName} />
 
+            {publishedDate && <meta property="article:published_time" content={publishedDate} />}
+
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:url" content={canonicalUrl} />
@@ -38,7 +40,7 @@ const SEO = ({ title, description, image, url, type = 'article', author = 'Bisha
                     "@type": type === 'article' ? 'BlogPosting' : 'WebPage',
                     "headline": title,
                     "image": [image],
-                    "datePublished": new Date().toISOString(), // In a real app, pass the actual date
+                    ...(publishedDate && { datePublished: publishedDate }),
                     "author": [{
                         "@type": "Person",
                         "name": author,

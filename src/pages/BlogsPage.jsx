@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import { formatPublicationDate, getBlogMetadata } from "../utils/blogMetadata";
 
 const BlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,13 +14,12 @@ const BlogsPage = () => {
         const promises = folders.map(async (folder) => {
           const markdownContent = await fetch(`/markdowns/${folder}/mapreduce.md`).then((res) => res.text());
 
-          const lines = markdownContent.split("\n");
-          const title = lines.find((line) => line.startsWith("# "))?.replace("# ", "") || "Untitled";
-          const imageMatch = markdownContent.match(/!\[.*?\]\((.*?)\)/);
-          const thumbnail = imageMatch ? `/markdowns/${folder}/${imageMatch[1]}` : "/default.jpg";
-          const excerpt = lines.find((line) => line.trim() && !line.startsWith("#")) || "No excerpt available.";
+          const metadata = getBlogMetadata(markdownContent, folder);
+          const categories = /\b(?:wearable|smartwatch|biosignal|PPG)\b/i.test(metadata.title)
+            ? ["Wearables", "AI & Engineering"]
+            : ["AI & Engineering"];
 
-          return { folder, title, thumbnail, excerpt, date: "Feb 6, 2025", category: "AI & Engineering" };
+          return { folder, ...metadata, categories };
         });
 
         Promise.all(promises).then((data) => {
@@ -57,7 +57,7 @@ const BlogsPage = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogs.map(({ folder, title, thumbnail, excerpt, date, category }) => (
+            {blogs.map(({ folder, title, thumbnail, excerpt, publishedDate, readingMinutes, categories }) => (
               <Link to={`/blog/${folder}`} key={folder} className="group">
                 <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col h-full transform group-hover:-translate-y-2">
                   <div className="relative h-64 overflow-hidden">
@@ -66,18 +66,24 @@ const BlogsPage = () => {
                       alt={title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-black/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-lg uppercase tracking-wider">
-                        {category}
-                      </span>
+                    <div className="absolute top-4 left-4 right-4 flex flex-wrap gap-2">
+                      {categories.map(category => (
+                        <span key={category} className="bg-black/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-lg uppercase tracking-wider">
+                          {category}
+                        </span>
+                      ))}
                     </div>
                   </div>
 
                   <div className="p-8 flex flex-col flex-grow">
                     <div className="flex items-center text-sm text-gray-500 mb-4">
-                      <span>{date}</span>
-                      <span className="mx-2">•</span>
-                      <span>5 min read</span>
+                      {publishedDate && (
+                        <>
+                          <time dateTime={publishedDate}>{formatPublicationDate(publishedDate)}</time>
+                          <span className="mx-2">•</span>
+                        </>
+                      )}
+                      <span>{readingMinutes} min read</span>
                     </div>
 
                     <h2 className="text-2xl text-black font-bold mb-4 leading-tight group-hover:text-gray-700 transition-colors">

@@ -29,7 +29,7 @@ export default function blogSharePages() {
           });
           if (markdown === null) continue;
 
-          const { title, excerpt, thumbnail } = getBlogMetadata(markdown, folder);
+          const { title, excerpt, thumbnail, publishedDate } = getBlogMetadata(markdown, folder);
           const fullTitle = `${title} | ${siteName}`;
           const url = `${siteUrl}/blog/${encodeURIComponent(folder)}`;
           const imageUrl = new URL(thumbnail);
@@ -45,6 +45,7 @@ export default function blogSharePages() {
             meta("name", "description", excerpt),
             `<link data-rh="true" rel="canonical" href="${escapeHtml(url)}" />`,
             meta("property", "og:type", "article"),
+            ...(publishedDate ? [meta("property", "article:published_time", publishedDate)] : []),
             meta("property", "og:site_name", siteName),
             meta("name", "twitter:card", "summary_large_image"),
             ...Object.entries(socialFields).flatMap(([name, value]) => [
