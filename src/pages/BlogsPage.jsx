@@ -15,11 +15,11 @@ const BlogsPage = () => {
           const markdownContent = await fetch(`/markdowns/${folder}/mapreduce.md`).then((res) => res.text());
 
           const metadata = getBlogMetadata(markdownContent, folder);
-          const categories = /\b(?:wearable|smartwatch|biosignal|PPG)\b/i.test(metadata.title)
-            ? ["Wearables", "AI & Engineering"]
-            : ["AI & Engineering"];
+          const category = /\b(?:wearable|smartwatch|biosignal|PPG)\b/i.test(metadata.title)
+            ? "Wearables"
+            : "AI & Engineering";
 
-          return { folder, ...metadata, categories };
+          return { folder, ...metadata, category };
         });
 
         Promise.all(promises).then((data) => {
@@ -57,7 +57,7 @@ const BlogsPage = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogs.map(({ folder, title, thumbnail, excerpt, publishedDate, readingMinutes, categories }) => (
+            {blogs.map(({ folder, title, thumbnail, excerpt, publishedDate, readingMinutes, category }) => (
               <Link to={`/blog/${folder}`} key={folder} className="group">
                 <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col h-full transform group-hover:-translate-y-2">
                   <div className="relative h-64 overflow-hidden">
@@ -66,12 +66,10 @@ const BlogsPage = () => {
                       alt={title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 left-4 right-4 flex flex-wrap gap-2">
-                      {categories.map(category => (
-                        <span key={category} className="bg-black/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-lg uppercase tracking-wider">
-                          {category}
-                        </span>
-                      ))}
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-black/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-lg uppercase tracking-wider">
+                        {category}
+                      </span>
                     </div>
                   </div>
 
