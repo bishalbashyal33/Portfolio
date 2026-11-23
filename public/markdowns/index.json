@@ -1,4 +1,5 @@
 [
+  "ppg-afib-alert-ecg-validation",
   "ear-eeg-sleep-staging",
   "wearable-biomarkers-ecg-ppg",
   "wearable-signal-filtering",
