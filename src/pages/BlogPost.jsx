@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import NotionMarkdownRenderer from "../components/NotionMarkDownRenderer";
 import SEO from "../components/SEO";
+import { getBlogMetadata } from "../utils/blogMetadata";
 import { FaLinkedin, FaInstagram, FaGithub, FaLink } from "react-icons/fa";
 
 const BlogPost = () => {
@@ -25,18 +26,8 @@ const BlogPost = () => {
         if (!response.ok) throw new Error("Blog not found");
 
         const markdown = await response.text();
-        const lines = markdown.split("\n");
-        const title = lines.find(l => l.startsWith("# "))?.replace("# ", "") || folder.replace(/-/g, " ");
-
-        const imageMatch = markdown.match(/!\[.*?\]\((.*?)\)/);
-        const thumbnail = imageMatch ? `/markdowns/${folder}/${imageMatch[1]}` : "https://bishalb.com/og-image.jpg";
-
-        const excerpt = lines.find(l => l.trim() && !l.startsWith("#"))?.substring(0, 160) || "Read this interesting article by Bishal Bashyal.";
-
         setBlogData({
-          title,
-          excerpt,
-          thumbnail,
+          ...getBlogMetadata(markdown, folder),
           content: markdown,
           date: "February 6, 2025",
           exists: true,
@@ -102,7 +93,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#f3f3f3] pt-32 pb-20">
+    <div className="min-h-screen bg-[#f3f3f3] pt-44 sm:pt-36 pb-20">
       <SEO
         title={blogData.title}
         description={blogData.excerpt}

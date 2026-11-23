@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { siteName, siteUrl } from '../utils/blogMetadata';
 
 const SEO = ({ title, description, image, url, type = 'article', author = 'Bishal Bashyal' }) => {
-    const siteName = 'Bishal Bashyal Portfolio';
     const fullTitle = `${title} | ${siteName}`;
-    const canonicalUrl = `https://bishalb.com${url}`; // Update with actual domain
+    const canonicalUrl = new URL(url, siteUrl).href;
     const twitterHandle = '@bishalbashyal'; // Update if you have one
 
     return (

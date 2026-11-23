@@ -1,6 +1,11 @@
 [
   "wearable-biomarkers-ecg-ppg",
   "wearable-signal-filtering",
+  "ppg-to-ecg",
+  "hospital-to-smartwatch-ecg",
+  "biosignal-device-shortcuts",
+  "ppg-cadence-foundation-model",
+  "biosignal-window-length",
   "agent-hallucination",
   "multi-agent-systems",
   "distributed-rag",
